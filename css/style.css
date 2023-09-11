@@ -183,12 +183,12 @@ body:after {
 }
 
 .site-footer {
-  padding: 4em 0;
+  padding: 4em 0 0;
   background: #333333;
 }
 @media (min-width: 768px) {
   .site-footer {
-    padding: 4em 0;
+    padding: 4em 0 0;
   }
 }
 .site-footer .border-top {
@@ -215,6 +215,11 @@ body:after {
 .site-footer .footer-heading {
   font-size: 16px;
   color: #fff;
+}
+
+.img-footer {
+  max-height: 160px;
+  width: auto;
 }
 
 .bg-text-line {
