@@ -40,12 +40,18 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Work Sans", sans-serif, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* made by INDIA */
+
+@media screen and (max-width: 768px) {
+  .row-gap {
+    gap: 30px;
+  }
+}
 
 .barra-gov {
   display: flex;
@@ -143,9 +149,9 @@ body:after {
 .form-control {
   height: 43px;
   border-radius: 30px;
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Work Sans", sans-serif, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 }
 .form-control:active,
 .form-control:focus {
@@ -404,7 +410,7 @@ body:after {
   position: relative;
   left: 0;
   top: -5px;
-  font-family: "Work Sans" !important;
+  font-family: "Work Sans", sans-serif !important;
   font-size: 30px;
   font-weight: 900;
 }
@@ -894,6 +900,16 @@ body:after {
   .circle-bg:after {
     bottom: 0px;
     right: -90px;
+  }
+}
+@media (max-width: 900px) {
+  .circle-bg:after {
+    right: -40px;
+  }
+}
+@media (max-width: 900px) {
+  .circle-bg:after {
+    right: 0px;
   }
 }
 
