@@ -898,18 +898,7 @@ body:after {
 }
 @media (max-width: 991.98px) {
   .circle-bg:after {
-    bottom: 0px;
-    right: -90px;
-  }
-}
-@media (max-width: 900px) {
-  .circle-bg:after {
-    right: -40px;
-  }
-}
-@media (max-width: 900px) {
-  .circle-bg:after {
-    right: 0px;
+    display: none;
   }
 }
 
