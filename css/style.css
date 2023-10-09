@@ -414,12 +414,19 @@ body:after {
   font-size: 30px;
   font-weight: 900;
 }
+@media screen and (max-width: 550px) {
+  .site-navbar .site-logo {
+    font-size: 22px;
+  }
+}
 .site-navbar .site-logo a {
   text-transform: uppercase;
 }
 .site-navbar .site-navigation .site-menu {
   margin-bottom: 0;
+  width: auto;
 }
+
 .site-navbar .site-navigation .site-menu .active {
   color: #007bff;
   display: inline-block;
@@ -437,6 +444,11 @@ body:after {
   color: #000;
   display: inline-block;
   text-decoration: none !important;
+}
+@media screen and (max-width: 768px) {
+  .site-navbar .site-navigation .site-menu > li > a {
+    padding: 0 10px;
+  }
 }
 .site-navbar .site-navigation .site-menu > li > a:hover {
   color: #007bff;
@@ -2736,4 +2748,38 @@ figure figcaption {
 .icon {
   max-height: 60px;
   width: auto;
+}
+
+/* MENU */
+
+.header-container-manual {
+  max-width: 90vw;
+  margin: auto;
+}
+
+.menu-container {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.site-menu {
+  padding-left: 0;
+}
+@media screen and (max-width: 550px) {
+  .hide-this {
+    display: none !important;
+  }
+}
+
+.logo-container {
+  width: auto;
+  flex: auto;
 }
