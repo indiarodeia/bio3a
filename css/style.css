@@ -450,6 +450,11 @@ body:after {
     padding: 0 10px;
   }
 }
+@media screen and (max-width: 400px) {
+  .site-navbar .site-navigation .site-menu > li > a {
+    padding: 0 6px;
+  }
+}
 .site-navbar .site-navigation .site-menu > li > a:hover {
   color: #007bff;
 }
@@ -2782,4 +2787,10 @@ figure figcaption {
 .logo-container {
   width: auto;
   flex: auto;
+}
+
+@media screen and (max-width: 450px) {
+  .logo-container {
+    padding: 0;
+  }
 }
