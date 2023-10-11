@@ -419,12 +419,18 @@ body:after {
     font-size: 22px;
   }
 }
+@media screen and (max-width: 350px) {
+  .site-navbar .site-logo {
+    display: none;
+  }
+}
 .site-navbar .site-logo a {
   text-transform: uppercase;
 }
 .site-navbar .site-navigation .site-menu {
   margin-bottom: 0;
   width: auto;
+  flex-wrap: nowrap;
 }
 
 .site-navbar .site-navigation .site-menu .active {

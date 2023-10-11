@@ -1,7 +1,12 @@
 RewriteEngine On
 
+# Redirect from "bio3a.pt/index.html" to "bio3a.pt"
 RewriteRule ^index\.html$ / [R=301,L]
-RewriteRule ^project\.html$ /projecto [R=301,L]
+
+# Redirect from "bio3a.pt/project.html" to "bio3a.pt/projecto"
+RewriteRule ^project\.html$ /projeto [R=301,L]
+
+# Redirect from "bio3a.pt/galeria.html" to "bio3a.pt/galeria"
 RewriteRule ^galeria\.html$ /galeria [R=301,L]
 
 # Redirect from "bio3a.pt/blog.html" to "bio3a.pt/blog"
