@@ -1,4 +1,10 @@
 RewriteEngine On
 
-# Redirect from .html to non-.html URL
-RewriteRule ^(.*)\.html$ $1 [L,R=301]
+# Redirect from /index.html to root URL
+RewriteCond %{HTTPS} on
+RewriteRule ^index\.html$ https://bio3a.pt/ [L,R=301]
+
+# Redirect from .html to non-.html URL and remove the extension
+RewriteCond %{HTTPS} on
+RewriteRule ^blog\.html$ https://bio3a.pt/blog [L,R=301]
+
